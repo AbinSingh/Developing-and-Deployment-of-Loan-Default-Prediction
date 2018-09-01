@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>Imarticus-Loan-Default-Prediction App</title>
+<head>
+<style>
+h1 {color:darkslategray;}
+</style>
+</head>
+
+<div align="center">
+<h1 style="font-family:verdana;">Loan Default Prediction</h1>
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image:url("C:/Users/Abin/Desktop/Imarticus Project/Final_Project/WebApp/final_app/app/static/model.jpg");
+
+    min-height: 50px;
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    max-width: 100px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 6%;
+    padding: 5px 5px;
+    margin: 1px 0 1px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 6%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="bg-img">
+ <form action = "/getdelay" method="POST">
+   <div align="center">
+   <p><b>term_ 60 months:<input type="text" name="term_ 60 months"></b></p>
+   <p><b>inq_last_6mths:<input type="text" name="inq_last_6mths"></b></p>   
+   <p><b>annual_inc:<input type="text" name="annual_inc"></b></p>
+   <p><b>int_rate:<input type="text" name="int_rate"></b></p>
+   <p><b>grade_B:<input type="text" name="grade_B"></b></p>
+   <p><b>grade_D:<input type="text" name="grade_D"></b></p>
+   <p><b>grade_E:<input type="text" name="grade_E"></b></p>
+   <p><b>grade_F:<input type="text" name="grade_F"></b></p>
+   <p><b>tot_cur_bal:<input type="text" name="tot_cur_bal"></b></p>   
+   <p><b>total_rev_hi_lim:<input type="text" name="total_rev_hi_lim"></b></p>
+   <p><b>loan_income_ratio:<input type="text" name="loan_income_ratio"></b></p>
+   <p><b>initial_list_status_w:<input type="text" name="initial_list_status_w"></b></p>
+   <p><b>verification_status_Verified:<input type="text" name="verification_status_Verified"></b></p>
+   
+  
+   <p><button type="sumbit" class="btn">Submit</button></p>
+ </form>
+
+
+
+<address>
+Developed by Team Pink<br> 
+Imarticus Learning<br>
+Bangalore<br>
+</address>
+
+</body>
+</html>
+
+
+
+  
+
+  
+  
+  
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
